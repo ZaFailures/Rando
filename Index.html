@@ -1,0 +1,40 @@
+!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          img{
+            width: 600px;
+            height: auto;
+          }
+
+      </style>
+    <title>Cool Website</title>
+  </head>
+  <body>
+    <h1>Cool Website</h1>
+    <p>html die</p>
+
+    <img src="https://www.hdcarwallpapers.com/thumbs/2019/koenigsegg_jesko_prototype_2019_4k_3-t2.jpg">
+
+    <blockquote>"I am sad sometimes.</blockquote>
+    <button>Change Quote?</button>
+    <script>
+      var index = 0;
+
+      function changeQuote(){
+        var quotes = [
+            'this is cool',
+            'nope',
+            'yes',
+        ];
+        var blockquote = document.querySelector("blockquote");
+        blockquote.innerHTML = quotes[index];
+
+        index++;
+        if (index >= 4){
+          index = 0
+        }
+      }
+    </script>
+  </body>
+</html>
